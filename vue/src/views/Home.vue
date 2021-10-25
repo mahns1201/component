@@ -11,7 +11,7 @@
 export default {
   methods: {
     go: function(path) {
-      console.log(path);
+      this.$router.push(`/${path}`);
     },
   },
 };
