@@ -1,20 +1,9 @@
 <template>
-  <div>
-    <h1>Home</h1>
-    <ol>
-      <li @click="go('input-tag')">Input Tag</li>
-    </ol>
-  </div>
+  <h1>Input Tag</h1>
 </template>
 
 <script>
-export default {
-  methods: {
-    go: function(path) {
-      console.log(path);
-    },
-  },
-};
+export default {};
 </script>
 
 <style>
