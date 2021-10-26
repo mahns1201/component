@@ -1,5 +1,5 @@
-# Self Made Front-End Component
+# Self Made Front-End Component 📝
 
-## [Vue](../vue/README.md)
+#### [Vue](../main/vue/README.md)
 
-## [React](../react/README.md)
+#### [React](../react/README.md)
