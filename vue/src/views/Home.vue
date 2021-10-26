@@ -2,7 +2,7 @@
   <div>
     <h1>Home</h1>
     <ol>
-      <li @click="go('input-tag')">Input Tag</li>
+      <li @click="go('input-tag')"><span class="button">Input Tag</span></li>
     </ol>
   </div>
 </template>
@@ -17,13 +17,13 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 h1 {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
   margin-top: 60px;
+}
+
+.button {
+  cursor: pointer;
 }
 </style>
