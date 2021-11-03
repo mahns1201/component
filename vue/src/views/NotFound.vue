@@ -1,6 +1,10 @@
 <template>
   <div>
-    <label>페이지를 찾을 수 없습니다.</label>
+    <img src="../assets/logo.png" />
+    <div class="center">
+      <label class="title">주제목</label>
+      <label class="title">부제목</label>
+    </div>
   </div>
 </template>
 
@@ -8,4 +12,17 @@
 export default {};
 </script>
 
-<style></style>
+<style scoped>
+img {
+  display: block;
+  margin: 0 auto;
+  margin-top: 10%;
+}
+
+.center {
+  display: flex;
+
+  justify-content: center;
+  margin-top: 5%;
+}
+</style>
