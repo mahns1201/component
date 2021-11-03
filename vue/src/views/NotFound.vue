@@ -1,8 +1,8 @@
 <template>
   <div class="form">
-    <img src="../assets/logo.png" alt="../assets/logo.png" />
+    <img src="../assets/sad.png" alt="../assets/logo.png" />
     <div class="center">
-      <label class="title">404 Page</label>
+      <label class="title">404</label>
       <label class="sub-title">The page you requested was not found.</label>
     </div>
     <button class="btn" @click="onHome">Go Home</button>
