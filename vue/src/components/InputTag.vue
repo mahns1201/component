@@ -4,7 +4,7 @@
     <label class="home_button" @click="onHome"
       ><span class="btn">Home</span></label
     >
-    <div class="main">
+    <div class="form">
       <div>
         <input
           type="text"
@@ -18,7 +18,7 @@
         <!-- :value="tag" @input=event => v-model의 과정 -->
       </div>
 
-      <div>
+      <div style="width:700px; margin-top: 10px;">
         <button
           v-for="(item, index) in tag_list"
           :key="index"
@@ -77,11 +77,17 @@ h1 {
   margin-top: 60px;
 }
 
-.main {
+input {
+  padding: 5px 10px;
+}
+
+.form {
   display: flex;
-  flex-direction: column;
   justify-content: center;
-  margin-top: 100px;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+  height: 30vh;
 }
 
 .home_button {
@@ -96,5 +102,10 @@ h1 {
 
 .btn {
   cursor: pointer;
+  margin: 2px 2px;
 }
+
+/* ::placeholder {
+  text-align: center;
+} */
 </style>
