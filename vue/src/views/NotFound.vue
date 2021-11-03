@@ -3,7 +3,7 @@
     <img src="../assets/sad.png" alt="../assets/logo.png" />
     <div class="center">
       <label class="title">404</label>
-      <label class="sub-title">The page you requested was not found.</label>
+      <label class="sub-title">The page you requested was not found</label>
     </div>
     <button class="btn" @click="onHome">Go Home</button>
   </div>
