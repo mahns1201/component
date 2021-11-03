@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="form">
     <img src="../assets/logo.png" />
     <div class="center">
       <label class="title">주제목</label>
@@ -13,16 +13,16 @@ export default {};
 </script>
 
 <style scoped>
-img {
-  display: block;
-  margin: 0 auto;
-  margin-top: 10%;
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 .center {
   display: flex;
-
-  justify-content: center;
-  margin-top: 5%;
+  flex-direction: column;
 }
 </style>
