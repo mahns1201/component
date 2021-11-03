@@ -3,6 +3,7 @@
     <h1>Home</h1>
     <ol>
       <li @click="go('input-tag')"><span class="button">Input Tag</span></li>
+      <li @click="go('494')"><span class="button">404 Page</span></li>
     </ol>
   </div>
 </template>
