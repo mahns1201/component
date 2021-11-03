@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Home</h1>
-    <ol>
+    <ol style="margin-top: 100px;">
       <li @click="go('input-tag')"><span class="button">Input Tag</span></li>
       <li @click="go('494')"><span class="button">404 Page</span></li>
     </ol>
@@ -22,6 +22,10 @@ export default {
 h1 {
   text-align: center;
   margin-top: 60px;
+}
+
+li {
+  margin: 10px;
 }
 
 .button {
