@@ -5,7 +5,7 @@
       <label class="title">404</label>
       <label class="sub-title">The page you requested was not found</label>
     </div>
-    <button class="btn" @click="onHome">Go Home</button>
+    <!-- <button class="btn" @click="onHome">Go Home</button> -->
   </div>
 </template>
 
