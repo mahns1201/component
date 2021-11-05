@@ -18,6 +18,7 @@
 
 ### 1. 404 Page
 
-![image](https://user-images.githubusercontent.com/46416816/140117638-cf47e773-288c-40d1-8ce3-65c2b91db81d.png)
+![image](https://user-images.githubusercontent.com/46416816/140530307-adbfc7bf-a54c-4ee6-9371-b24e011af6fa.png)
+
 
 
