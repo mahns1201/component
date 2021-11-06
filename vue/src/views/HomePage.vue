@@ -1,15 +1,22 @@
 <template>
   <div>
     <h1>Home</h1>
-    <ol style="margin-top: 100px;">
+    <InputTag />
+    <!-- <ol style="margin-top: 100px;">
       <li @click="go('input-tag')"><span class="button">Input Tag</span></li>
       <li @click="go('494')"><span class="button">404 Page</span></li>
-    </ol>
+    </ol> -->
   </div>
 </template>
 
 <script>
+import InputTag from "../components/InputTag.vue";
+
 export default {
+  components: {
+    InputTag,
+  },
+
   methods: {
     go: function(path) {
       this.$router.push(`/${path}`);
