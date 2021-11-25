@@ -1,24 +1,24 @@
 <template>
   <div>
-    <router-view />
+    <main-layout>
+      <router-view />
+    </main-layout>
   </div>
 </template>
 
 <script>
+import MainLayout from "../src/layouts/MainLayout.vue";
+
 export default {
   name: "App",
+
+  components: {
+    MainLayout,
+  },
 };
 </script>
 
 <style>
-body {
-  /* layout */
-  position: absolute;
-  left: 10%;
-  height: 100vh;
-  width: 80%;
-}
-
 * {
   /* padding, margin default */
   padding: 0;
