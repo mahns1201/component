@@ -1,37 +1,27 @@
 <template>
-  <div>
-    <h1>Input Tag</h1>
-    <label class="home_button" @click="onHome"
-      ><span class="btn">Home</span></label
-    >
-    <div class="form">
-      <div>
-        <input
-          type="text"
-          placeholder="Input Your Hashtag"
-          style="width:700px; height:70px; font-size:25px;"
-          :value="tag"
-          @input="updateTag"
-          @keypress.enter.prevent="onAddTag"
-          @keyup.delete="onDeleteTag(tag_list.length - 1)"
-        />
-        <!-- :value="tag" @input=event => v-model의 과정 -->
-      </div>
-
-      <div style="width:700px; margin-top: 10px;">
-        <button
-          v-for="(item, index) in tag_list"
-          :key="index"
-          type="button"
-          class="btn"
-          @click="onDeleteTag(index)"
-          readonly
-        >
-          {{ item }}
-        </button>
-      </div>
+  <section>
+    <div>
+      <input
+        type="text"
+        placeholder="Input Your Hashtag"
+        :value="tag"
+        @input="updateTag"
+        @keypress.enter.prevent="onAddTag"
+        @keyup.delete="onDeleteTag(tag_list.length - 1)"
+      />
     </div>
-  </div>
+    <div>
+      <button
+        v-for="(item, index) in tag_list"
+        :key="index"
+        type="button"
+        @click="onDeleteTag(index)"
+        readonly
+      >
+        {{ item }}
+      </button>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -44,11 +34,11 @@ export default {
   },
 
   methods: {
-    updateTag: function(e) {
+    updateTag: function (e) {
       this.tag = e.target.value;
     },
 
-    onAddTag: function() {
+    onAddTag: function () {
       this.tag = this.tag.replace(/(\s*)/g, "");
 
       if (this.tag === "") return;
@@ -58,13 +48,13 @@ export default {
       }
     },
 
-    onDeleteTag: function(index) {
+    onDeleteTag: function (index) {
       if (index < 0) return;
 
       this.tag_list.splice(index, 1);
     },
 
-    onHome: function() {
+    onHome: function () {
       this.$router.push("/");
     },
   },
@@ -72,40 +62,7 @@ export default {
 </script>
 
 <style scoped>
-h1 {
+::placeholder {
   text-align: center;
-  margin-top: 60px;
 }
-
-input {
-  padding: 5px 10px;
-}
-
-.form {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin-top: 50px;
-  height: 30vh;
-}
-
-.home_button {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.tag {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.btn {
-  cursor: pointer;
-  margin: 2px 2px;
-}
-
-/* ::placeholder {
-  text-align: center;
-} */
 </style>
