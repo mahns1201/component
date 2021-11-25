@@ -1,18 +1,15 @@
 <template>
-  <div class="form">
+  <section>
     <img src="../assets/sad.png" alt="../assets/logo.png" />
-    <div class="center">
-      <label class="title">404</label>
-      <label class="sub-title">The page you requested was not found</label>
-    </div>
-    <!-- <button class="btn" @click="onHome">Go Home</button> -->
-  </div>
+    <h1 class="title">404</h1>
+    <h2 class="sub-title">The page you requested was not found</h2>
+  </section>
 </template>
 
 <script>
 export default {
   methods: {
-    onHome: function() {
+    onHome: function () {
       this.$router.push("/");
     },
   },
@@ -20,17 +17,12 @@ export default {
 </script>
 
 <style scoped>
-.form {
+section {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 90vh;
-}
-
-.center {
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 .title {
