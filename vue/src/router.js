@@ -1,6 +1,7 @@
 import { createWebHistory, createRouter } from "vue-router";
 
 import HomePage from "./views/HomePage.vue";
+import TestPage from "./test/TestPage.vue";
 import NotFound from "./views/NotFound.vue";
 import InputTag from "./components/InputTag.vue";
 
@@ -9,6 +10,11 @@ const routes = [
     path: "/",
     name: "HomePage",
     component: HomePage,
+  },
+  {
+    path: "/test",
+    name: "TestPage",
+    component: TestPage,
   },
   {
     path: "/input-tag",
